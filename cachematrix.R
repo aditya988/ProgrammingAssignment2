@@ -31,6 +31,8 @@ cacheSolve <- function(x, ...) {
                 return(inv)
         }
         data <- x$get()
+## In the statement below "a" is nothing but the matrix whose inverse must be 
+## calculated
         inv <- solve(a)
         x$setinv(inv)
         inv
